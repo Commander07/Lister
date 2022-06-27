@@ -16,7 +16,7 @@ config = datastore.data
 list_emoji = discord.PartialEmoji(name="📖")
 
 
-@bot.slash_command(guild_ids=[840699664239558736])
+@bot.slash_command()
 @discord.default_permissions(administrator=True)
 @discord.guild_only()
 async def set_list(ctx, list_channel: discord.TextChannel = None):
@@ -34,7 +34,7 @@ async def set_list(ctx, list_channel: discord.TextChannel = None):
     await ctx.respond(f"Successfully set list channel to {list_channel.mention}!")
 
 
-@bot.slash_command(guild_ids=[840699664239558736])
+@bot.slash_command()
 @discord.default_permissions(administrator=True)
 @discord.guild_only()
 async def set_list_role(ctx, list_role: discord.Role):
@@ -51,7 +51,7 @@ async def set_list_role(ctx, list_role: discord.Role):
     await ctx.respond(f"Successfully set list role to {list_role.mention}!")
 
 
-@bot.slash_command(guild_ids=[840699664239558736])
+@bot.slash_command()
 @discord.default_permissions(administrator=True)
 @discord.guild_only()
 async def set_reaction_message(ctx, reaction_message_id):
