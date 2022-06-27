@@ -24,5 +24,3 @@ bot\Scripts\activate.bat
 pip install -r requirements.txt
 python main.py
 ```
-
-## [Invite me](https://discord.com/api/oauth2/authorize?client_id=990952702756405278&permissions=8&scope=bot%20applications.commands)
