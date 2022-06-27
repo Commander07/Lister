@@ -125,6 +125,9 @@ async def set_dual_list(ctx, enabled: bool):
 @discord.default_permissions(administrator=True)
 @discord.guild_only()
 async def post_menu(ctx: discord.ApplicationContext):
+    """
+    Posts the list buttons it's important that 'list channel' and 'list role' has been configured.
+    """
     guild_id = str(ctx.guild.id)
     view = discord.ui.View(timeout=None)
     view.add_item(
